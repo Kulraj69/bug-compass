@@ -1,0 +1,2 @@
+# CSV preserves source issue whitespace and standard CSV CRLF record endings.
+data/atlas.csv -text -whitespace

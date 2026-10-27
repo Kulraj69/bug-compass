@@ -1,0 +1,24 @@
+Bug Compass derived atlas
+Copyright (c) 2026 Kulraj Singh
+
+The original Bug Compass annotations, measurements, and dataset compilation in
+atlas.json and atlas.csv are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+Legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: Bug Compass, Kulraj Singh (2026), derived from SWE-bench Lite by
+Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei,
+Ofir Press, and Karthik Narasimhan. Source:
+https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite
+https://github.com/SWE-bench/SWE-bench
+
+Changes: indexed historical Python imports and symbols; extracted issue
+mentions; mapped gold edits; added graph distances, context estimates,
+retrieval rankings, and summary statistics.
+
+This license does not replace upstream rights. SWE-bench's license and the
+licenses of original issue text and repository code remain applicable. The
+underlying repository snapshots and patches are not redistributed here.
+Preserve upstream attribution and notices when redistributing upstream
+material. No endorsement by SWE-bench or the source projects is implied.
