@@ -15,12 +15,32 @@
       "@1": 0.3,
       "@5": 0.5067
     },
+    "gemma4_plain": {
+      "@1": 0.52,
+      "@5": 0.5633
+    },
     "gemma4_compass": {
       "@1": 0.51,
       "@5": 0.5933
     }
   },
   "paired_bootstrap_95ci": {
+    "gemma4_plain-bm25@1": [
+      0.3,
+      0.42
+    ],
+    "gemma4_plain-bm25@5": [
+      0.0867,
+      0.2
+    ],
+    "gemma4_plain-mentions_first@1": [
+      0.1633,
+      0.2767
+    ],
+    "gemma4_plain-mentions_first@5": [
+      0.01,
+      0.1033
+    ],
     "gemma4_compass-bm25@1": [
       0.29,
       0.4067
@@ -36,9 +56,23 @@
     "gemma4_compass-mentions_first@5": [
       0.0433,
       0.13
+    ],
+    "gemma4_compass-gemma4_plain@1": [
+      -0.0433,
+      0.02
+    ],
+    "gemma4_compass-gemma4_plain@5": [
+      0.0033,
+      0.0567
     ]
   },
   "gemma_runs": {
+    "gemma4_plain": {
+      "empty_rankings": 14,
+      "mean_seconds": 8.65,
+      "mean_prompt_tokens": 701.5,
+      "total_seconds": 2594.1
+    },
     "gemma4_compass": {
       "empty_rankings": 7,
       "mean_seconds": 8.84,
@@ -52,6 +86,7 @@
       "bm25": 0.1818,
       "bfs": 0.2273,
       "mentions_first": 0.513,
+      "gemma4_plain": 0.7143,
       "gemma4_compass": 0.7078
     },
     "reached_via_imports (radius>=1)": {
@@ -59,6 +94,7 @@
       "bm25": 0.1,
       "bfs": 0.0,
       "mentions_first": 0.0,
+      "gemma4_plain": 0.1778,
       "gemma4_compass": 0.2
     },
     "no_finite_radius": {
@@ -66,6 +102,7 @@
       "bm25": 0.1964,
       "bfs": 0.0,
       "mentions_first": 0.1964,
+      "gemma4_plain": 0.5357,
       "gemma4_compass": 0.4643
     },
     "pool_contains_edit": {
@@ -73,6 +110,7 @@
       "bm25": 0.2462,
       "bfs": 0.1795,
       "mentions_first": 0.4615,
+      "gemma4_plain": 0.8,
       "gemma4_compass": 0.7846
     }
   },
