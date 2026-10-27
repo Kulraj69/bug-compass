@@ -1,0 +1,10 @@
+.venv
+pipeline/.cache
+node_modules
+.next
+*.png
+!public/**
+codex.log
+artifacts
+.playwright
+test-results
