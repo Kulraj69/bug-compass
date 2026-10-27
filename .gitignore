@@ -16,3 +16,4 @@ codex.log
 test-results/
 public/atlas.json
 public/atlas.csv
+.vercel

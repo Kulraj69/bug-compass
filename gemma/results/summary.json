@@ -1,0 +1,80 @@
+{
+  "tasks": 300,
+  "pool_mean_size": 17.38,
+  "pool_oracle_recall": 0.65,
+  "recall": {
+    "bm25": {
+      "@1": 0.16,
+      "@5": 0.42
+    },
+    "bfs": {
+      "@1": 0.1167,
+      "@5": 0.2333
+    },
+    "mentions_first": {
+      "@1": 0.3,
+      "@5": 0.5067
+    },
+    "gemma4_compass": {
+      "@1": 0.51,
+      "@5": 0.5933
+    }
+  },
+  "paired_bootstrap_95ci": {
+    "gemma4_compass-bm25@1": [
+      0.29,
+      0.4067
+    ],
+    "gemma4_compass-bm25@5": [
+      0.1233,
+      0.2267
+    ],
+    "gemma4_compass-mentions_first@1": [
+      0.1567,
+      0.2633
+    ],
+    "gemma4_compass-mentions_first@5": [
+      0.0433,
+      0.13
+    ]
+  },
+  "gemma_runs": {
+    "gemma4_compass": {
+      "empty_rankings": 7,
+      "mean_seconds": 8.84,
+      "mean_prompt_tokens": 878.5,
+      "total_seconds": 2650.8
+    }
+  },
+  "slices": {
+    "direct_mention (radius 0)": {
+      "tasks": 154,
+      "bm25": 0.1818,
+      "bfs": 0.2273,
+      "mentions_first": 0.513,
+      "gemma4_compass": 0.7078
+    },
+    "reached_via_imports (radius>=1)": {
+      "tasks": 90,
+      "bm25": 0.1,
+      "bfs": 0.0,
+      "mentions_first": 0.0,
+      "gemma4_compass": 0.2
+    },
+    "no_finite_radius": {
+      "tasks": 56,
+      "bm25": 0.1964,
+      "bfs": 0.0,
+      "mentions_first": 0.1964,
+      "gemma4_compass": 0.4643
+    },
+    "pool_contains_edit": {
+      "tasks": 195,
+      "bm25": 0.2462,
+      "bfs": 0.1795,
+      "mentions_first": 0.4615,
+      "gemma4_compass": 0.7846
+    }
+  },
+  "slices_metric": "recall@1"
+}
